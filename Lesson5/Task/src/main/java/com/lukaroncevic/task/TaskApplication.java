@@ -12,6 +12,8 @@ public class TaskApplication {
 
         Record record = new Record();
 
+        Professor professor;
+
         Scanner scanner = new Scanner(System.in);
 
         int option = 0;
@@ -36,7 +38,15 @@ public class TaskApplication {
                     System.out.print("Enter Index Number: ");
                     String indexNumber = scanner.next();
 
-                    record.addStudent(firstName, lastName, yearOfStudy, indexNumber);
+                    System.out.print("Enter Professor's First Name: ");
+                    String profFirstName = scanner.next();
+                    System.out.print("Enter Professor's Last Name: ");
+                    String profLastName = scanner.next();
+
+                    professor = record.addProfessor(profFirstName, profLastName);
+
+                    record.addStudent(firstName, lastName, yearOfStudy, indexNumber,professor);
+                    record.addProfessor(profFirstName, profLastName);
                     break;
 
                 case 2:

@@ -1,0 +1,4 @@
+Mar 27, 2023 1:59:09 PM com.lukaroncevic.task.TaskApplication main
+WARNING: Wrong input numbers for Hourly Rate or Hours Worked. Please check again.
+Mar 27, 2023 1:59:09 PM com.lukaroncevic.task.TaskApplication main
+INFO: Laura Kovacic: 9000

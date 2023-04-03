@@ -264,7 +264,7 @@ public class Main {
                             System.out.println("4. Quit");
 
                             searchOption = scanner.nextInt();
-                            if(searchOption > 4 ){
+                            if(searchOption == 4 ){
                                 break;
                             }
                             else if(searchOption < 1 || searchOption > 4) {
@@ -273,7 +273,7 @@ public class Main {
                             break;
 
                         } catch (InputMismatchException e) {
-                            System.out.println("Invalid input. Please enter a number from 1 to 3.");
+                            System.out.println("Invalid input. Please enter a number from 1 to 4.");
                             scanner.nextLine();
                         }
                     }

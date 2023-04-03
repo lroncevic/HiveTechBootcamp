@@ -46,11 +46,11 @@ public class VehicleManagerImpl implements VehicleManager {
         for (Vehicle vehicle : vehicles) {
             if (vehicle.getVin() == vin) {
                 vehicles.remove(vehicle);
-                System.out.println("Vehicle with VIN " + vehicle.getVin() + " deleted successfully");
+                System.out.println("Vehicle with VIN " + vehicle.getVin() + " deleted successfully.");
                 return;
             }
         }
-        throw new NoSuchVehicleException("Vehicle with VIN " + vin + " not found");
+        throw new NoSuchVehicleException("Vehicle with VIN " + vin + " not found.");
     }
 
     /**
@@ -67,7 +67,7 @@ public class VehicleManagerImpl implements VehicleManager {
             }
         }
         if (!vehicleFound) {
-            throw new NoSuchVehicleException("Vehicle of VIN " + vin + " not found");
+            throw new NoSuchVehicleException("Vehicle of VIN " + vin + " not found.");
 
         }
     }
@@ -85,7 +85,7 @@ public class VehicleManagerImpl implements VehicleManager {
             }
         }
         if (!vehicleFound) {
-            throw new NoSuchVehicleException("Vehicle of model " + model + " not found");
+            throw new NoSuchVehicleException("Vehicle of model " + model + " not found.");
 
         }
     }
@@ -103,7 +103,7 @@ public class VehicleManagerImpl implements VehicleManager {
             }
         }
         if (!vehicleFound) {
-            throw new NoSuchVehicleException("Vehicle of manufacturer " + manufacturer + " not found");
+            throw new NoSuchVehicleException("Vehicle of manufacturer " + manufacturer + " not found.");
 
         }
     }

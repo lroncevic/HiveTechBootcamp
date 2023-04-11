@@ -27,14 +27,14 @@ public class TaskApplication {
 
         try {
             Employee employee1 = payroll.addEmployee("Luka", "Roncevic", -160,45);
-            logger.info(employee1.firstName + " " + employee1.lastName + ":" + " " + employee1.getPayment());
+            logger.info(employee1.getFirstName() + " " + employee1.getLastName() + ":" + " " + employee1.getPayment());
         } catch (InvalidNumberException e) {
             logger.warning(e.getMessage());
         }
 
         try {
             Employee employee2 = payroll.addEmployee("Laura", "Kovacic", 180,50);
-            logger.info(employee2.firstName + " " + employee2.lastName + ":" + " " + employee2.getPayment());
+            logger.info(employee2.getFirstName() + " " + employee2.getLastName() + ":" + " " + employee2.getPayment());
         } catch (InvalidNumberException e) {
             logger.warning(e.getMessage());
         }

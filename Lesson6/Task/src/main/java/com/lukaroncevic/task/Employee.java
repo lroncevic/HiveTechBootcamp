@@ -2,11 +2,11 @@ package com.lukaroncevic.task;
 
 public class Employee {
 
-    public String firstName;
-    public String lastName;
-    public int hourlyRate;
-    public int hoursWorked;
-    public int payment;
+    private String firstName;
+    private String lastName;
+    private int hourlyRate;
+    private int hoursWorked;
+    private int payment;
 
     public Employee(String firstName, String lastName, int hourlyRate, int hoursWorked) {
         this.firstName = firstName;
